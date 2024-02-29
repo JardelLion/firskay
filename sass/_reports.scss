@@ -1,0 +1,25 @@
+.reports {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.reports__div {
+    position: relative;
+    width: 264.44px;
+    
+    & .aspas {
+        position: absolute;
+        font-size: 137px;
+        font-weight: bold;
+        color: #fae2d2;
+        top: -138px;
+        left: -45px;
+    }
+    
+    & p {
+        font-size: 24px;
+        font-weight: normal;
+        text-align: fit-content;
+    }
+}

@@ -1,0 +1,27 @@
+.doct {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+
+}
+.doct__picture {
+   display: flex;
+   justify-content: center;
+}
+
+.text {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px auto;
+}
+.cat-foot {
+    display: flex;
+    position: absolute;
+    top: 97px;
+    z-index: -1;
+    & img {
+        width: 105.63px;
+        height: 90.47px;
+    }
+}

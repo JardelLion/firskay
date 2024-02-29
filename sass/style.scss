@@ -1,0 +1,85 @@
+@forward "reset";
+@forward "colors";
+@forward "doct";
+@forward "reports";
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+body {
+  width: 88%;margin: 0 auto;
+  background-color: var(--primary-color);
+  font-family: "Inter", sans-serif;;
+  overflow-x: hidden;
+  height: 100%;
+  }
+
+
+h1 {
+  font-size: 4.75rem;
+}
+
+.section__flex {
+  display: flex;
+}
+
+.cat-img {
+  width: 100%;
+  max-width:610px;
+  min-width: 270px;
+  margin-top: -45px;
+  height:auto;
+}
+.section__content__p1 {
+  width: 354.43px;
+  margin-top: 30px;
+}
+
+.get__bonkers-btn {
+  border: none;
+  max-width: 296px;
+  min-width: 296px;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+  height: 99px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+
+@media (max-width:64em) /*1024px*/ {
+  h1 {
+    font-size: 2.5625rem;
+    text-align: center;
+  }
+  .bonkers {
+    display: block;
+    margin: 0 auto;
+  }
+  .section__flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section__content__p1 {
+    width: 262px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .get__bonkers-btn {
+    width: 100%;
+    display: block;
+    max-width: 270px;
+    height: 73px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 40px;
+  }
+  
+  
+
+  .cat-img {
+    width:100%;
+    min-width: 271px;
+    margin-top: 0;
+    height:auto;
+  }
+}

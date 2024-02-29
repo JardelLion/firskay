@@ -1,0 +1,141 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*COLORS*/
+:root {
+  --primary-color: #fffbf3;
+  --secondary-color: #ffa800;
+  --third-color: #000;
+}
+
+.doct {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.doct__picture {
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 40px auto;
+}
+
+.cat-foot {
+  display: flex;
+  position: absolute;
+  top: 97px;
+  z-index: -1;
+}
+.cat-foot img {
+  width: 105.63px;
+  height: 90.47px;
+}
+
+.reports {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.reports__div {
+  position: relative;
+  width: 264.44px;
+}
+.reports__div .aspas {
+  position: absolute;
+  font-size: 137px;
+  font-weight: bold;
+  color: #fae2d2;
+  top: -138px;
+  left: -45px;
+}
+.reports__div p {
+  font-size: 24px;
+  font-weight: normal;
+  text-align: fit-content;
+}
+
+body {
+  width: 88%;
+  margin: 0 auto;
+  background-color: var(--primary-color);
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+h1 {
+  font-size: 4.75rem;
+}
+
+.section__flex {
+  display: flex;
+}
+
+.cat-img {
+  width: 100%;
+  max-width: 610px;
+  min-width: 270px;
+  margin-top: -45px;
+  height: auto;
+}
+
+.section__content__p1 {
+  width: 354.43px;
+  margin-top: 30px;
+}
+
+.get__bonkers-btn {
+  border: none;
+  max-width: 296px;
+  min-width: 296px;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+  height: 99px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+@media (max-width: 64em) {
+  h1 {
+    font-size: 2.5625rem;
+    text-align: center;
+  }
+  .bonkers {
+    display: block;
+    margin: 0 auto;
+  }
+  .section__flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section__content__p1 {
+    width: 262px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .get__bonkers-btn {
+    width: 100%;
+    display: block;
+    max-width: 270px;
+    height: 73px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 40px;
+  }
+  .cat-img {
+    width: 100%;
+    min-width: 271px;
+    margin-top: 0;
+    height: auto;
+  }
+}/*# sourceMappingURL=style.css.map */
