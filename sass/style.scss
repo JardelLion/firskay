@@ -2,11 +2,20 @@
 @forward "colors";
 @forward "doct";
 @forward "reports";
+@forward "fact";
 // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 100 to 900
+html {
+  overflow-x: hidden;
+}
 
+main  {
+  width: 88%;
+  margin: 0 auto;
+  margin-bottom:150px;
+}
 body {
-  width: 88%;margin: 0 auto;
+  
   background-color: var(--primary-color);
   font-family: "Inter", sans-serif;;
   overflow-x: hidden;
@@ -82,4 +91,56 @@ h1 {
     margin-top: 0;
     height:auto;
   }
+}
+
+
+.ready {
+  text-align: center;
+  margin-bottom: 100px;
+  
+
+  &__box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @media (max-width:50em){
+      flex-direction: column;
+    }
+  }
+
+  & h2 {
+    font-weight: bold;
+    font-size: 41px;
+  }
+}
+
+
+.header__logo-ready {
+  display: block;
+  margin-top: 40px;
+  cursor:default
+  
+}
+
+
+.footer {
+  background-color: #feecca;
+ & .header {
+  margin-bottom: 1px;
+  height: 85px;
+ }
+
+ & .header__div a:last-child::before {
+  bottom: -11px;
+ }
+
+
+ & .burger {
+  @media (max-width:800px) {
+    display: none;
+
+    
+  }
+ }
 }

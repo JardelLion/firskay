@@ -34,6 +34,7 @@
   position: absolute;
   top: 97px;
   z-index: -1;
+  overflow-x: hidden;
 }
 .cat-foot img {
   width: 105.63px;
@@ -44,6 +45,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
+  gap: 25px;
 }
 
 .reports__div {
@@ -65,8 +67,101 @@
 }
 
 body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 50em) {
+  .reports {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .reports__div {
+    margin-top: 10px;
+    margin-bottom: 60px;
+  }
+}
+.fact {
+  position: relative;
+  background-color: #e89058;
+}
+
+.cat-2 {
+  position: absolute;
+  top: -105px;
+  left: 0;
+  right: 0;
+  display: block;
+  margin: 0 auto;
+  width: 434.61px;
+  height: 242.56px;
+}
+@media (max-width: 32.25em) {
+  .cat-2 {
+    width: 344.61px;
+    height: 190.56px;
+    top: -84px;
+  }
+}
+
+.space {
+  display: block;
+  padding-bottom: 131px;
+}
+
+.fact__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  width: 88%;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (max-width: 50em) {
+  .fact__box {
+    flex-direction: column;
+  }
+}
+
+.fact__div-title {
+  background-color: #ffd1b3;
+  font-weight: bold;
+  font-size: 1.25rem;
+  width: 83px;
+  height: 33px;
+  line-height: 33px;
+  border-radius: 5px;
+  text-align: center;
+  rotate: -5.13deg;
+  margin: 40px 0;
+}
+
+.fact__div-paragraf {
+  font-weight: normal;
+  font-size: 1.275rem;
+  color: #000;
+  max-width: 754.35px;
+  max-height: 153px;
+  margin-top: 56px;
+}
+
+.fact__div-paragraf:last-child {
+  padding-bottom: 20px;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+main {
   width: 88%;
   margin: 0 auto;
+  margin-bottom: 150px;
+}
+
+body {
   background-color: var(--primary-color);
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
@@ -137,5 +232,45 @@ h1 {
     min-width: 271px;
     margin-top: 0;
     height: auto;
+  }
+}
+.ready {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.ready__box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 50em) {
+  .ready__box {
+    flex-direction: column;
+  }
+}
+.ready h2 {
+  font-weight: bold;
+  font-size: 41px;
+}
+
+.header__logo-ready {
+  display: block;
+  margin-top: 40px;
+  cursor: default;
+}
+
+.footer {
+  background-color: #feecca;
+}
+.footer .header {
+  margin-bottom: 1px;
+  height: 85px;
+}
+.footer .header__div a:last-child::before {
+  bottom: -11px;
+}
+@media (max-width: 800px) {
+  .footer .burger {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
